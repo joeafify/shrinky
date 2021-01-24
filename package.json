@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/dev-joe95/shrinky/issues"
   },
-  "homepage": "https://github.com/dev-joe95/shrinky#readme"
+  "homepage": "https://github.com/dev-joe95/shrinky#readme",
+  "devDependencies": {
+    "electron": "^11.2.1"
+  }
 }
