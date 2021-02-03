@@ -1,17 +1,18 @@
 {
   "name": "shrinky",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a small desktop app for optima-zing images.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "electron .",
+    "dev": "electromon .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dev-joe95/shrinky.git"
   },
-  "keywords": [],
+  "keywords": ["shrink","image","electron","nodejs"],
   "author": "Dev Joe",
   "license": "ISC",
   "bugs": {
