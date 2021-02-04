@@ -25,7 +25,8 @@
   },
   "homepage": "https://github.com/dev-joe95/shrinky#readme",
   "devDependencies": {
-    "electron": "^11.2.1"
+    "electron": "^11.2.1",
+    "electron-packager": "^15.2.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2",
