@@ -7,19 +7,24 @@
       http-equiv="Content-Security-Policy"
       content="script-src 'self' 'unsafe-inline';"
     />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/materialize-css/dist/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body
-    style="
-      height: 100vh;
-      background: #333;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: column;
-    "
-  >
-    <img src="../assets/images/shrink.svg" alt="logo" width="100" height="100" />
-    <p style="color: white;">About Shrinky</p>
+  <body>
+    <div class="container about center-align">
+      <ul class="collection">
+        <li class="collection-item">
+          <h4>
+            <img src="../assets/images/shrink.svg" alt="Shrinky" width="30" />
+            Shrinky
+          </h4>
+        </li>
+        <li class="collection-item">Developed by: Dev Joe</li>
+        <li class="collection-item">Version: 1.0.0</li>
+      </ul>
+    </div>
   </body>
 </html>
