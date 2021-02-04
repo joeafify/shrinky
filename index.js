@@ -6,6 +6,7 @@ const {
   ipcMain,
   shell,
 } = require("electron");
+const log = require("electron-log")
 const path = require("path");
 const os = require("os");
 const imagemin = require("imagemin");
@@ -104,9 +105,10 @@ async function optimizeImg(imgPath, quality, dest) {
       ],
     });
     mainWindow.webContents.send("optimize:done")
+    log.info(files)
     shell.openItem(dest);
   } catch (error) {
-    console.log(error);
+    log.error(error)
   }
 }
 app.on("window-all-closed", () => {
