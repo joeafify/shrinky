@@ -1,4 +1,4 @@
-const { app, BrowserWindow, Menu, globalShortcut } = require("electron");
+const { app, BrowserWindow, Menu, globalShortcut, ipcMain } = require("electron");
 
 const isDev = (process.env.NODE_ENV = "development" ? true : false);
 const isMac = process.platform === "darwin" ? true : false;
@@ -7,8 +7,9 @@ let aboutWindow;
 
 function createMainWindow() {
   mainWindow = new BrowserWindow({
-    width: 800,
+    width: 500,
     height: 600,
+    resizable:false,
     icon: "./assets/images/shrink.png",
     webPreferences: {
       nodeIntegration: true,
@@ -75,6 +76,10 @@ const menuTemplate = [
 if (isMac) {
   menuTemplate.unshift({ role: app.name });
 }
+
+ipcMain.on("image:minimizer", (e, options) => {
+  
+})
 app.on("window-all-closed", () => {
   if (!isMac) {
     app.quit();
