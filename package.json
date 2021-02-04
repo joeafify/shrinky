@@ -12,7 +12,12 @@
     "type": "git",
     "url": "git+https://github.com/dev-joe95/shrinky.git"
   },
-  "keywords": ["shrink","image","electron","nodejs"],
+  "keywords": [
+    "shrink",
+    "image",
+    "electron",
+    "nodejs"
+  ],
   "author": "Dev Joe",
   "license": "ISC",
   "bugs": {
@@ -21,5 +26,9 @@
   "homepage": "https://github.com/dev-joe95/shrinky#readme",
   "devDependencies": {
     "electron": "^11.2.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "materialize-css": "^1.0.0-rc.2"
   }
 }
