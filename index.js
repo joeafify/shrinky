@@ -103,6 +103,7 @@ async function optimizeImg(imgPath, quality, dest) {
         imageminPngquant({ quality: [quality / 100, quality / 100] }),
       ],
     });
+    mainWindow.webContents.send("optimize:done")
     shell.openItem(dest);
   } catch (error) {
     console.log(error);
