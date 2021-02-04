@@ -24,7 +24,7 @@ function createMainWindow() {
     width: 500,
     height: 600,
     resizable: false,
-    icon: "./assets/images/shrink.png",
+    icon: "./assets/icons/png/shrink.png",
     webPreferences: {
       nodeIntegration: true,
     },
@@ -37,7 +37,7 @@ function createAboutWindow() {
   aboutWindow = new BrowserWindow({
     width: 300,
     height: 300,
-    icon: "./assets/images/shrink.png",
+    icon: "./assets/icons/png/shrink.png",
     webPreferences: {
       nodeIntegration: true,
     },
